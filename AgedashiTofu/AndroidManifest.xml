@@ -7,11 +7,38 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.agedashitofu.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.agedashitofu.ContactListLoader"
+            android:label="@string/title_activity_contact_list_loader"
+            android:parentActivityName="com.example.agedashitofu.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.agedashitofu.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.agedashitofu.CustomList"
+            android:label="@string/title_activity_custom_list"
+            android:parentActivityName="com.example.agedashitofu.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.agedashitofu.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

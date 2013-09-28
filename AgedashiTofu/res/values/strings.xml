@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">AgedashiTofu</string>
+    <string name="contacts">Contacts</string>
+    <string name="custom_list">Custom List</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
